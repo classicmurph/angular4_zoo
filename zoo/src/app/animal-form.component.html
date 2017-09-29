@@ -6,16 +6,33 @@
         <input type="text" class="form-control" id="name" required>
       </div>
 
+
+      <div class="form-group">
+      <label for="classType">Classification</label>
+      <select class="form-control" id="classType" required>
+        <option *ngFor="let cls of classTypes" [value]="classType">{{cls}}</option>
+      </select>
+      </div>
+
+      <div class="form-group">
+        <label for="avgHeight">Average Height</label>
+        <input type="number" class="form-control" id="height">
+      </div>
+
+      <div class="form-group">
+        <label for="avgWeight">Average Weight</label>
+        <input type="number" class="form-control" id="weight">
+      </div>
+
       <div class="form-group">
         <label for="descr">Description</label>
         <input type="text" class="form-control" id="descr">
       </div>
+
       <div class="form-group">
-		  <label for="classType">Classification</label>
-		  <select class="form-control" id="classType" required>
-		    <option *ngFor="let cls of classTypes" [value]="classType">{{cls}}</option>
-		  </select>
-		</div>
+        <label for="quantity">Quantity to add</label>
+        <input type="numer" class="form-control" id="quantity">
+      </div>
 
       <button type="submit" class="btn btn-success">Submit</button>
 
