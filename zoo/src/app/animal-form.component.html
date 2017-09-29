@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Animal Form</h1>
+    <form (ngSubmit)="onSubmit()" #animalForm="ngForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="descr">Description</label>
+        <input type="text" class="form-control" id="descr">
+      </div>
+      <div class="form-group">
+		  <label for="classType">Classification</label>
+		  <select class="form-control" id="classType" required>
+		    <option *ngFor="let cls of classTypes" [value]="classType">{{cls}}</option>
+		  </select>
+		</div>
+
+      <button type="submit" class="btn btn-success">Submit</button>
+
+    </form>
+</div>
