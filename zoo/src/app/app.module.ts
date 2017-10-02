@@ -4,8 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { AnimalFormComponent } from './animal-form.component';
-import { AnimalComponent } from './animal.component';
+import { AnimalFormComponent } from './animal-form/animal-form.component';
+import { AnimalComponent } from './animal/animal.component';
 
 const appRoutes: Routes = [
   { path: 'animals',

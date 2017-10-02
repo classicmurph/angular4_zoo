@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import { Animal } from './animal'
+import { Animal } from '../models/animal.models'
 
 @Component({
 	selector: 'show-animals',
